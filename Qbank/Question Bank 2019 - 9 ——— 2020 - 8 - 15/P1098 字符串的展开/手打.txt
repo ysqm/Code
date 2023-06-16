@@ -1,0 +1,34 @@
+if(p3==1){
+					if(p1==1){
+						for(;left<right;++left)
+							for(int k=0;k<p2;k++)
+								printf("%c",islower(left));
+					}
+					else if(p1==2){
+						for(;left<right;++left)
+							for(int k=0;k<p2;k++)
+								printf("%c",isupper(left));
+					}
+					else if(p1==3){
+						for(;left<right;++left)
+							for(int k=0;k<p2;k++)
+								printf("*");
+					}
+				}
+				else if(p3==2){
+					if(p1==1){
+						for(;right>left;--right)
+							for(int k=0;k<p2;k++)
+								printf("%c",islower(right));
+					}
+					else if(p1==2){
+						for(;right>left;--right)
+							for(int k=0;k<p2;k++)
+								printf("%c",isupper(right));
+					}
+					else if(p1==3){
+						for(;right>left;--right)
+							for(int k=0;k<p2;k++)
+								printf("*");
+					}
+				}

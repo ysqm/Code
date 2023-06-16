@@ -1,0 +1,1 @@
+# include <cstdio>int k,h,w,len=0;char a[257];int main(){	scanf("%d%s",&k,a);	w=2*k;	h=3+w;	while(a[len]) len++;	for(int i=1;i<=n;i++){		for(int j=0;j<len;j++){			if((a[j]=='1'||a[j]=='4')&&i==1) continue;			else if(a[j]!='1')				for(int l=1;l<=wi;l++){					if((l==1||l==wi)||&&(i==1||i==k+1||i==n)){						if()					}				}			else 					}	}	return 0;} 

@@ -1,0 +1,7 @@
+for(int l = 2;l <= n; ++l){
+    	for(int i=1 ; i+l-1 <= n ; ++i){
+    		int j=i+l-1;
+			dp[i][j][0] = min(dp[i + 1][j][0] + (a[i + 1] - a[i]) * (sum[i] + sum[n] - sum[j]),
+               				  dp[i + 1][j][1] + (a[j] - a[i]) * (sum[i] + sum[n] - sum[j]));
+    		dp[i][j][1] = min(dp[i][j - 1][0] + (a[j] - a[i]) * (sum[i - 1] + sum[n] - sum[j - 1]),
+               				  dp[i][j - 1][1] + (a[j] - a[j - 1]) * (sum[i - 1] + sum[n] - sum[j - 1]));
